@@ -1,0 +1,144 @@
+body{
+	background-color: #5e8ac6;
+	font-family: sans-serif;
+}
+
+nav{
+	margin: 20px 0px;
+}
+
+h1,h2,h3,h4,h5{
+	font-family: sans-serif;
+	margin: 8px 0px;
+	text-shadow: 1px 1px 1px black;
+}
+
+body h1,h2,h3,h4,h5{
+	color: white;
+}
+
+
+/**
+ *MathApp
+ */
+
+ .math{
+ 	color: #ffcc00;
+ 	font-size: 72px;
+ 	font-weight:bold;
+ 	text-shadow:1px 1px 2px black;
+ }
+
+ .app{
+ 	color: #3399ff;
+ 	font-size: 72px;
+ 	font-weight:bold;
+ 	text-shadow:1px 1px 2px black;
+ }
+
+ /**
+ *Utilidades
+ */
+
+ .hidden{
+ 	display: none;
+ }
+
+.separator{
+	border-bottom: 4px dashed white;
+
+	margin: 30px 0px;
+}
+
+.strong{
+	font-weight: bold;
+}
+
+.text-center{
+	text-align: center;
+}
+
+
+/**
+ *Estructura de la información
+ */
+
+.page{
+	display: none;
+}
+
+.initial-page{
+	display: block;
+}
+/**
+ *Menús
+ */
+
+.pill-menu{
+	float: right;
+	padding: 0px;
+	margin: 0px;
+}
+
+.pill-menu li{
+	display: inline-block;
+	//border: 1px solid black;
+	height: 40px;
+	line-height: 40px;
+	margin-right: 10px;
+}
+
+.pill-menu li a{
+	color: white;
+	font-family: calibri;
+	display: block;
+	//border:1px solid red;
+	height: inherit;
+	line-height: inherit;
+	font-weight: bold;
+	padding: 0px 20px;
+	border-radius: 30px;
+	text-decoration: none;
+	font-size: 14pt;
+}
+
+.pill-menu li a.active{
+	background-color: white;
+	color:#6666ff;
+	//border: 1px solid #333366;
+	box-shadow: 1px 1px 1px black;
+}
+
+.pill-menu li a:hover{
+	text-shadow: 1px 1px 1px black;
+	background-color: rgba(29, 42, 99, 0.5);
+	color: white;
+
+}
+
+/**
+ *Botones
+ */
+
+.button{
+	border-radius: 50px;
+	font-family: calibri;
+	font-weight: bold;	
+	box-shadow: 1px 1px 1px black;
+	text-decoration: unset;
+	color: white;
+}
+
+.button:hover{
+	 text-decoration: none;
+	 color: white;
+}
+
+.button.big{
+	font-size: 35px;
+	padding: 10px 35px;
+}
+
+.btn-orange{
+	background-color: #f09450;
+}

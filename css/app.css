@@ -1,0 +1,110 @@
+body{
+	background-color: #349fd9;
+	display: none;
+}
+
+body  h1,h2,h3,h4,h5{
+	color: white;
+	font-weight: bold;
+	//text-shadow: 1px 1px 1px ;
+	margin: 5px 0px;
+}
+
+.tachar{
+	text-decoration: line-through;
+}
+
+.strong{
+	font-weight: bold;
+}
+.page{
+	display: none;
+	padding: 20px;
+	background-color: white;
+	margin: 20px 0;
+}
+.page h4{
+	color: #263a84;
+}
+.first{
+	display: block;
+}
+.content{
+	background-color: white;
+	padding: 30px 5%;
+	margin: 20px;
+
+}
+
+.page iframe{
+	margin: 0 auto;
+	display: block;
+}
+
+.content h4,h5{	
+	text-shadow: none;
+	color: #4173A3;
+}
+.content p{
+	padding: 5px 20px;
+	margin: 0px;
+	color: #4e5056;
+	font-size: 19px;
+	font-family: Calibri;
+}
+
+.content ol, ul{
+	color: #4e5056;
+	font-family: calibri;
+	font-size: 19px;
+}
+.separator{
+	border-bottom: 4px solid white;
+	margin: 30px 0px;
+}
+
+.mdl-button:hover{
+	text-decoration: none;
+}
+
+.mdl-button-big{
+	font-size: 14pt;
+	font-weight: bolder;
+	padding: 10px 30px;
+	height: auto;
+}
+
+/**
+ *MathApp
+ */
+
+ .math{
+ 	color: #ffcc00;
+ 	font-size: 72px;
+ 	font-weight:bold;
+ 	text-shadow:1px 1px 2px black;
+ }
+
+ .app{
+ 	color: #3399ff;
+ 	font-size: 72px;
+ 	font-weight:bold;
+ 	text-shadow:1px 1px 2px black;
+ }
+
+ .blank-page{
+ 	background-color: white;
+ 	display: block; 	
+ 	border-top: 1px solid lightgray;
+ 	border-bottom: 1px solid lightgray;
+ }
+
+ .bot-nav-bar{
+ 	display: flex;
+	justify-content: center;
+ }
+
+ .video{
+ 	background-color: white;
+ 	margin: 20px 0px;
+ }

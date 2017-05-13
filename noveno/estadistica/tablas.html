@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Estadística</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!--Jquery load-->
+	<script type="text/javascript" src="../../plugins/jquery.min.js"></script>
+	<script type="text/javascript" src="../../plugins/jquery-ui.min.js"></script>
+	<!--Bootstrap-->
+	<link rel="stylesheet" type="text/css" href="../../bootstrap/css/bootstrap.css">
+	<!--Material Design-->
+	<link rel="stylesheet" href="../../css/material-icons.css">
+	<link rel="stylesheet" href="../../mdl/material.css">
+	<script defer src="../../mdl/material.js"></script>
+	<!--Archivos de la aplicación-->
+	<link rel="stylesheet" type="text/css" href="../../css/app.css">
+	<script type="text/javascript" src="../../js/app.js"></script>
+</head>
+<body>
+
+	<!-- Always shows a header, even in smaller screens. -->
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+  <header class="mdl-layout__header">
+    <div class="mdl-layout__header-row">
+      <!-- Title -->
+      <span class="mdl-layout-title">Tablas de frecuencia</span>
+      <!-- Add spacer, to align navigation to the right -->
+      <div class="mdl-layout-spacer"></div>
+      <!-- Navigation. We hide it in small screens. -->
+      <nav class="mdl-navigation mdl-layout--large-screen-only">
+         <!-- Colored FAB button with ripple -->
+			<a href="index.html" class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored mdl-button--mini-fab">
+			 <i class="material-icons">arrow_back</i>
+			</a>
+       </nav>
+    </div>
+  </header>
+  <div class="mdl-layout__drawer">
+    <span class="mdl-layout-title">Estadística</span>
+    <nav class="mdl-navigation">
+      <a class="mdl-navigation__link" href="../../">Inicio</a>
+      <a class="mdl-navigation__link" href="../">Unidades</a>
+      <a class="mdl-navigation__link" href="index.html">Estadistica</a>
+    </nav>
+  </div>
+  <main class="mdl-layout__content">
+  		<div class="page-content"><!-- Your content goes here -->
+			<div class="content">
+				<div class="mdl-grid">
+					<div class="mdl-cell mdl-cell--12-col">
+						<h4 class="text-center">Tablas de frecuencia</h4><br>
+						<h5>Distribución de frecuencias</h5>
+						<p>La distribución de frecuencias o tabla de frecuencias es una ordenación en forma de tabla de los datos estadísticos, asignando a cada dato su frecuencia correspondiente.</p>
+
+						<h4 class="text-center">Tipos de frecuencias</h4><br>
+						<h5>Frecuencia absoluta</h5>
+						<p>La frecuencia absoluta es el número de veces que aparece un determinado valor en un estudio estadístico. <br>Se representa por <strong>fi</strong>. <br> La suma de las frecuencias absolutas es igual al número total de datos, que se representa por <strong>N</strong>.</p>
+						
+						<img src="../../img/frecuencia-absoluta-formula.jpg" alt="No se puede visualizar la imagen">
+						<p>	
+							Para indicar resumidamente estas sumas se utiliza la letra griega <strong>Σ</strong> (sigma mayúscula) que se lee suma o sumatoria.
+						</p>
+						<img src="../../img/simbolo-sumatoria.png" alt="No se puede visualizar la imagen">
+
+						<h5>Frecuencia relativa</h5>
+						<p>
+							La frecuencia relativa es el cociente entre la frecuencia absoluta de un determinado valor y el número total de datos.<br> Se puede expresar en tantos por ciento y se representa por <strong>ni</strong>.
+						</p>
+						<img src="../../img/frecuencia-relativa.jpg" alt="No se puede visualizar la imagen">					<p>La suma de las frecuencias relativas es igual a 1.</p>
+						
+						<h5>Frecuencia acumulada</h5>
+						<p>
+							La frecuencia acumulada es la suma de las frecuencias absolutas de todos los valores inferiores o iguales al valor considerado. <br>
+							Se representa por <strong>Fi</strong>.
+						</p>
+						
+						<h5>Frecuencia relativa acumulada</h5>
+						<p>
+							La frecuencia relativa acumulada es el cociente entre la frecuencia acumulada de un determinado valor y el número total de datos. Se puede expresar en tantos por ciento. <br>
+							Se representa por <strong>Ni</strong>.
+
+						</p>
+
+						<h5>Ejemplo</h5>
+						<p>Durante el mes de julio, en una ciudad se han registrado las siguientes temperaturas máximas:
+						</p>
+						<p class="bold">
+							<strong>
+								32, 31, 28, 29, 33, 32, 31, 30, 31, 31, 27, 28, 29, 30, 32, 31, 31, 30, 30, 29, 29, 30, 30, 31, 30, 31, 34, 33, 33, 29, 29.
+							</strong>						
+						</p>
+						<p>
+							En la primera columna de la tabla colocamos la variable ordenada de menor a mayor, en la segunda hacemos el recuento y en la tercera anotamos la frecuencia absoluta.
+						</p>
+						
+						<table class="mdl-data-table">
+						  <thead>
+						    <tr>
+						      <th>Xi</th>
+						      <th>Recuento</th>
+						      <th>fi</th>
+						      <th>Fi</th>
+						      <th>ni</th>
+						      <th>Ni</th>
+						    </tr>
+						  </thead>
+						  <tbody>
+						    <tr>
+						    	<td>27</td>
+							    <td class="strong">I</td>
+						      	<td>1</td>
+						      	<td>1</td>
+						      	<td>0.032</td>
+						      	<td>0.032</td>
+						    </tr>
+						    <tr>
+						    	<td>28</td>
+							    <td class="strong">II</td>
+						      	<td>2</td>
+						      	<td>3</td>
+						      	<td>0.065</td>
+						      	<td>0.097</td>
+						    </tr>
+						    <tr>
+						     	<td>29</td>
+							    <td class="strong"><span class="tachar"> IIII</span> I</td>
+						      	<td>6</td>
+						      	<td>9</td>
+						      	<td>0.194</td>
+						      	<td>0.290</td>
+						    </tr>
+						    <tr>
+						     	<td>30</td>
+							    <td class="strong"><span class="tachar"> IIII</span> II</td>
+						      	<td>7</td>
+						      	<td>16</td>
+						      	<td>0.226</td>
+						      	<td>0.516</td>
+						    </tr>
+						     <tr>
+						     	<td>31</td>
+							    <td class="strong"><span class="tachar"> IIII</span> III</td>
+						      	<td>8</td>
+						      	<td>24</td>
+						      	<td>0.258</td>
+						      	<td>0.774</td>
+						    </tr>
+						    <tr>
+						     	<td>32</td>
+							    <td class="strong">III</td>
+						      	<td>3</td>
+						      	<td>27</td>
+						      	<td>0.097</td>
+						      	<td>0.871</td>
+						    </tr>
+						    <tr>
+						     	<td>33</td>
+							    <td class="strong">III</td>
+						      	<td>3</td>
+						      	<td>30</td>
+						      	<td>0.097</td>
+						      	<td>0.968</td>
+						    </tr>
+						     <tr>
+						     	<td>34</td>
+							    <td class="strong">I</td>
+						      	<td>1</td>
+						      	<td>31</td>
+						      	<td>0.032</td>
+						      	<td>1</td>
+						    </tr>
+						     <tr>
+						     	<td></td>
+						     	<td></td>
+						     	<td>31</td>
+						     	<td></td>
+						     	<td>1</td>
+						     	<td></td>
+						    </tr>
+						  </tbody>
+						</table>
+						<p>
+							Este tipo de tablas de frecuencias se utiliza con variables discretas.
+						</p>
+					</div>
+				</div>			
+			</div>
+		</div>
+	</main>
+</body>
+</html>
+<style>
+	img{
+		border: 0px solid lightgray;
+		border-radius: 20px;
+		display: block;
+		margin: 20px auto;
+		
+		width: 35%;
+		cursor: pointer;
+	}
+	
+	table{
+		width: 70%;
+		margin: 30 auto;
+	}
+</style>
+<script>
+	$("img").click(function(){
+		$(this).animate(
+			{
+				width: "50%"
+			}, "fast");
+	});
+
+	$("img").mouseleave(function(){
+		$(this).animate({
+			width: "35%"
+		}, 300);
+	});
+</script>

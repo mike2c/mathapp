@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contenido</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!--Jquery load-->
+	<script type="text/javascript" src="../plugins/jquery.min.js"></script>
+	<script type="text/javascript" src="../plugins/jquery-ui.min.js"></script>
+	<!--Bootstrap-->
+	<link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap.css">
+	<!--Material Design-->
+	<link rel="stylesheet" href="../css/material-icons.css">
+	<link rel="stylesheet" href="../mdl/material.css">
+	<script defer src="../mdl/material.js"></script>
+	<!--Archivos de la aplicación-->
+	<link rel="stylesheet" type="text/css" href="../css/app.css">
+	<script type="text/javascript" src="../js/app.js"></script>
+</head>
+<body>
+<!-- Always shows a header, even in smaller screens. -->
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+  <header class="mdl-layout__header">
+    <div class="mdl-layout__header-row">
+      <!-- Title -->
+      <span class="mdl-layout-title">Contenido</span>
+      <!-- Add spacer, to align navigation to the right -->
+      <div class="mdl-layout-spacer"></div>
+      <!-- Navigation. We hide it in small screens. -->
+     
+    </div>
+  </header>
+  	<div class="mdl-layout__drawer">
+	    <span class="mdl-layout-title">MathApp</span>
+	    <nav class="mdl-navigation">
+      		<a class="mdl-navigation__link" href="../">Inicio</a>
+	      	<a class="mdl-navigation__link" href="">Unidades</a>
+	    </nav>
+ 	</div>
+		<main class="mdl-layout__content">
+			<div class="page-content">
+				<div class="mdl-grid">
+					<div class="mdl-cell mdl-cell--1-col">
+						
+					</div>
+					<div class="mdl-cell mdl-cell--3-col">
+					<br><br><br>
+					<img src="../img/maestro_buho.png">
+					</div>
+					<div class="mdl-cell mdl-cell--8-col">
+						<h5 class="text-center" style="color:white;">Selecciona la unidad a estudiar</h5>
+						<br>
+						<table class="mdl-data-table mdl-js-data-table">
+						  <thead>
+						    <tr>
+						      <th class="mdl-data-table__cell--non-numeric">#</th>
+						      <th>Unidades</th>
+						      <th>Contenido</th>
+						      <th>Ir</th>
+						    </tr>
+						  </thead>
+						  <tbody>
+						    <tr>
+						      <td class="mdl-data-table__cell--non-numeric">1</td>
+						      <td>Estadística</td>
+						      <td>Tablas de frecuencia<br>Gráficos<br>Percentiles, deciles, cuartiles<br>Medidas de dispersión</td>
+						      <td><a href="estadistica/" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"><i class="material-icons">play_arrow</i></a></td>
+						    </tr>
+						    <tr>
+						      <td class="mdl-data-table__cell--non-numeric">2</td>
+						      <td>Conjunto de los números reales</td>
+						      <td>Potenciación<br>Base real con exponente racional<br></td>
+						       <td><a class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"><i class="material-icons">play_arrow</i></a></td>
+						    </tr>
+						    <tr>
+						      <td class="mdl-data-table__cell--non-numeric">3</td>
+						      <td>Radicación</td>
+						      <td>N/A</td>
+						       <td><a class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"><i class="material-icons">play_arrow</i></a>
+						       </td>
+						    </tr>
+						    <tr>
+						    	<td>5</td>
+						    	<td>Factorización</td>
+						    	<td>N/A</td>
+						    	<td><a class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"><i class="material-icons">play_arrow</i></a>
+						       </td>
+						    </tr>
+						    <tr>
+						    	<td>6</td>
+						   	 	<td>Geometría</td>
+						    	<td>N/A</td>
+						    	<td><a class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"><i class="material-icons">play_arrow</i></a>
+						       </td>
+						    </tr>
+						  </tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+	  	</main>
+	</div>
+</body>
+</html>
+<style type="text/css">
+	img{
+		display: block;
+		height:40%;
+		margin: 0 auto;
+	}
+
+	table{
+		
+		margin: 0 auto;
+	}
+</style>
