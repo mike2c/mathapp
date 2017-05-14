@@ -21,7 +21,8 @@ body  h1,h2,h3,h4,h5{
 	display: none;
 	padding: 20px;
 	background-color: white;
-	margin: 20px 0;
+	margin: 20px 20px;
+	margin-bottom: 0px;
 }
 .page h4{
 	color: #263a84;
@@ -33,7 +34,6 @@ body  h1,h2,h3,h4,h5{
 	background-color: white;
 	padding: 30px 5%;
 	margin: 20px;
-
 }
 
 .page iframe{
@@ -53,6 +53,13 @@ body  h1,h2,h3,h4,h5{
 	font-family: Calibri;
 }
 
+.page p{
+	padding: 5px 20px;
+	margin: 0px;
+	color: #4e5056;
+	font-size: 19px;
+	font-family: Calibri;
+}
 .content ol, ul{
 	color: #4e5056;
 	font-family: calibri;
@@ -108,3 +115,9 @@ body  h1,h2,h3,h4,h5{
  	background-color: white;
  	margin: 20px 0px;
  }
+
+ .mdl-button{
+    font-size: 16px;
+    font-weight: bold;
+    margin: 10px 5px;
+  }

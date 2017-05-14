@@ -46,24 +46,210 @@
   </div>
   <main class="mdl-layout__content">
   		<div class="page-content"><!-- INICIO DEL CONTENIDO DE LA PAGINA -->
-			<div class="page first">
-				<h3>Gráficos estadisticos</h3>
-			</div>
+			<div class="page first" id="tipos_graficos">
+					<h4 class="text-center">Gráficos estadisticos</h4>
+					<p>
+						Un gráfico o representación gráfica es un tipo de representación de datos, generalmente numéricos, mediante recursos gráficos (líneas, vectores, superficies o símbolos), para que se manifieste visualmente la relación matemática o correlación estadística que guardan entre sí
+					</p>
+					<br>
+					<h5 class="text-center">
+						Tipos de gráficas
+					</h5>
+					<div class="gallery">
+						<div class="gallery-item">
+							<img src="../../img/grafica-circular.png" alt="">
+							<a href="javascript:slidePage('#diagrama_circular');">
+								Diagrama de pastel o diagrama circular
+							</a>	
+						</div>
+						<div class="gallery-item">
+							<img src="../../img/diagrama-barras.png" alt="">
+							<a href="javascript:slidePage('#diagrama_barras');">
+								Diagrama de barras
+							</a>
+						</div>
+						<div class="gallery-item">
+							<img src="../../img/histograma.png" alt="">
+							<a href="">
+								Histograma
+							</a>
+						</div>
+						<div class="gallery-item">
+							<img src="../../img/poligono-frecuencia.gif" alt="">
+							<a href="">
+								Poligono de frecuencia
+							</a>
+						</div>
+						
+						<div class="gallery-item">
+							<img src="../../img/diagrama-lineas.gif" alt="">
+							<a href="">
+								Diagrama de lineas
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="page" id="diagrama_circular"><!--Página diagrama circular-->
+					<h4 class="text-center">Diagrama circular o Diagrama de pastel</h4>
+					<p>
+						Un diagrama de sectores se puede utilizar para todo tipo de variables, pero se usa frecuentemente para las variables cualitativas.Los datos se representan en un círculo, de modo que el ángulo de cada sector es proporcional a la frecuencia absoluta correspondiente.
+					</p>
+					<img style="margin: 0 auto;display:block;" src="../../img/formula-diagrama-circular.png" alt="">
+					<p>El diagrama circular se construye con la ayuda de un transportador de ángulos.
+					</p>
+					<h4 class="text-center">Ejemplo:</h4>
+					<p>
+						En una clase de 30 alumnos, 12 juegan a baloncesto, 3 practican la natación, 4 juegan al fútbol y el resto no practica ningún deporte.
+					</p>
+					<p>Aplicando la formula anterior podemos calular los ángulos para cada caso:</p>
+					<img src="../../img/formula-diagrama-circular-2.png" alt="">
+
+					<table class="table table-bordered">
+                        	<tbody><tr>
+	                          	<td></td>
+	                          	<th>Alumnos</th>
+	                          	<th>Ángulo</th>
+	                        </tr>
+	                        <tr>
+	                          	<td>Baloncesto</td>
+	                          	<td>12</td>
+	                          	<td>144°</td>
+	                        </tr>
+	                        <tr>
+	                          	<td>Natación</td>
+	                          	<td>3</td>
+	                          	<td>36°</td>
+	                        </tr>
+	                        <tr>
+	                          	<td>Fútbol</td>
+	                         	<td>9 </td>
+	                          	<td>108°</td>
+	                        </tr>
+	                        <tr>
+	                          	<th>Sin deporte</th>
+	                          	<td>6</td>
+	                          	<td>72°</td>
+	                        </tr>
+	                        <tr>
+	                          	<th>Total</th>
+	                          	<td style="color:#900;">30</td>
+	                          	<td style="color:#900;">360°</td>
+	                        </tr>
+                      	</tbody>
+                    </table>
+                    <img src="../../img/ejemplo-diagrama-circular.png">
+				</div>
+
+				<div class="page" id="diagrama_barras"><!--Diagrama de barras-->
+					<h4 class="text-center">Diagrama de barras</h4>
+					<p>
+						Un diagrama de barras se utiliza para de presentar datos cualitativos o datos cuantitativos de tipo discreto. <br>
+						Se representan sobre unos ejes de coordenadas, en el eje de abscisas se colocan los valores de la variable, y sobre el eje de ordenadas las frecuencias absolutas o relativas o acumuladas. <br>
+
+						Los datos se representan mediante barras de una altura proporcional a la frecuencia.</p>
+						<br>
+						<h5 class="text-center">Ejemplo</h5>
+						<br>
+						<p>Un estudio hecho al conjunto de los 20 alumnos de una clase para determinar su grupo sanguíneo ha dado el siguiente resultado</p>
+						<br><br>
+						<div class="row" >
+							<div class="col-md-offset-2 col-lg-offset-2 col-lg-4 col-md-4">
+							<p>Tabla de frecuencias</p>
+								<table class="table table-bordered">
+		                            <tbody><tr>
+		                              <th>Grupo sanguíneo</th>
+		                                <th>f<sub>i</sub></th>
+		                              </tr>
+		                            <tr>
+		                              <th>A</th>
+		                                <td>6</td>
+		                              </tr>
+		                            <tr>
+		                              <th>B</th>
+		                                <td>4</td>
+		                              </tr>
+		                            <tr>
+		                              <th>AB</th>
+		                                <td>1</td>
+		                              </tr>
+		                            <tr>
+		                              <th>0</th>
+		                                <td>9</td>
+		                              </tr>
+		                            <tr>
+		                              <td>&nbsp;</td>
+		                                <th style="color:#900;">20</th>
+		                              </tr>
+		                              </tbody>
+		                        </table>
+
+							</div>
+							<div class="col-lg-4 col-md-4">
+								<p>Gráfico resultante</p>
+								<img src="../../img/ejemplo-diagrama-barras.png" alt="">
+							</div>
+						</div>
+						<br>								
+				</div>
+			<div class="bot-nav-bar">
+			     	<!-- Colored mini FAB button -->
+				    <button onClick="slidePage('#tipos_graficos');" class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab mdl-button--colored">
+				     1
+				    </button>
+				    <!-- Colored mini FAB button -->
+				    <button onClick="slidePage('#diagrama_circular');" class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab mdl-button--colored">
+				     2
+				    </button>
+				    <button onClick="slidePage('#diagrama_barras');" class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab mdl-button--colored">
+				     3
+				    </button>
+				    <button onClick="slidePage('#histograma');" class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab mdl-button--colored">
+				     4
+				    </button>
+				    <button onClick="slidePage('#poligono_frecuencia');" class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab mdl-button--colored">
+				     5
+				    </button>
+				    <button onClick="slidePage('#diagrama_lineas');" class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab mdl-button--colored">
+				     6
+				    </button>
+
+			    </div>		
 		</div>
 	</main>
 </body>
 </html>
-<script>
-	$("img").click(function(){
-		$(this).animate(
-			{
-				width: "50%"
-			}, "fast");
-	});
+<style>
 
-	$("img").mouseleave(function(){
-		$(this).animate({
-			width: "35%"
-		}, 300);
-	});
-</script>
+	.gallery{
+		margin: 20px 0px;
+		margin-bottom: 0px;
+	}
+
+	.gallery-item{
+
+	
+		width: 40%;
+		font-weight: bold;
+		display: inline-block;
+		margin: 20px 20px;
+
+	}
+	.gallery-item a{
+		font-weight: bold;
+		display: block;
+		text-align: center;
+		margin: 10px;
+	}
+	.gallery-item img{
+		width: 90%;
+		display: block;
+		margin: 0 auto;
+	}
+	.page > img{
+		max-width: 400px;
+		display: block;
+		//margin: 0 auto;
+		margin: 20px auto;
+	}
+
+</style>
