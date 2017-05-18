@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Estadística</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!--Jquery load-->
+	<script type="text/javascript" src="../../plugins/jquery.min.js"></script>
+	<script type="text/javascript" src="../../plugins/jquery-ui.min.js"></script>
+	<!--Bootstrap-->
+	<link rel="stylesheet" type="text/css" href="../../bootstrap/css/bootstrap.css">
+	<!--Material Design-->
+	<link rel="stylesheet" href="../../css/material-icons.css">
+	<link rel="stylesheet" href="../../mdl/material.css">
+	<script defer src="../../mdl/material.js"></script>
+	<!--Archivos de la aplicación-->
+	<link rel="stylesheet" type="text/css" href="../../css/app.css">
+	<script type="text/javascript" src="../../js/app.js"></script>
+</head>
+<body>
+
+	<!-- Always shows a header, even in smaller screens. -->
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+  <header class="mdl-layout__header">
+    <div class="mdl-layout__header-row">
+      <!-- Title -->
+      <span class="mdl-layout-title">Estadística</span>
+      <!-- Add spacer, to align navigation to the right -->
+      <div class="mdl-layout-spacer"></div>
+      <!-- Navigation. We hide it in small screens. -->
+      <nav class="mdl-navigation mdl-layout--large-screen-only">
+         <!-- Colored FAB button with ripple -->
+			<a href="index.html" class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored mdl-button--mini-fab">
+			 <i class="material-icons">arrow_back</i>
+			</a>
+       </nav>
+    </div>
+  </header>
+  <div class="mdl-layout__drawer">
+    <span class="mdl-layout-title">Estadistica</span>
+    <nav class="mdl-navigation">
+      <a class="mdl-navigation__link" href="../../">Inicio</a>
+      <a class="mdl-navigation__link" href="../">Unidades</a>
+      <a class="mdl-navigation__link" href="index.html">Estadistica</a>
+    </nav>
+  </div>
+  <main class="mdl-layout__content">
+  		<div class="page-content"><!-- INICIO DEL CONTENIDO DE LA PAGINA -->
+  			<div class="page first" id="primera">
+  				<h4 class="text-center">Medidas de posición</h4>
+  				<p>
+  					Las medidas de posición dividen a un conjunto de datos ordenados en
+					partes con la misma cantidad de individuos. Entre los más populares
+					están los cuartiles, los deciles y los percentiles. La mediana es parte
+					de ellos y se ubica al centro de los datos. 
+  				</p>
+  				<br>
+  				<h5 class="">La Mediana</h5>
+  				<p>
+  					Una prueba de Matemática practicada a siete estudiantes dió como resultado las siguientes calificaciones:
+  					<p class="text-center">68 - 72 - 73 - 81 - 85 - 87 - 91</p>
+  				</p>
+  				<p>
+  					En esta lista ordenada el dato central es 81, ya que hay la misma
+					cantidad de datos menores que 81 y mayores que 81. El dato central
+					de una lista ordenada, cuando existe, se denomina mediana. Así, la
+					mediana de las siete calificaciones es 81.
+				</p>
+				<p>
+					Analicemos la siguiente situación:
+				</p>
+				<p>
+					Las cantidades de carreras anotadas por los líderes históricos en la
+					liga de beisbol profesional de Nicaragua son las siguientes: 117, 115,
+					101, 97, 96, 95 y 93. Al ordenar los datos en orden creciente advertimos
+					que la mediana, el dato central, deja el mismo número de datos por
+					debajo y por arriba de ella.
+				</p>
+				<img style="display: block; margin: 0 auto;" src="../../img/mediana-1.png" alt="">
+				<p>
+					Así, la mediana determina dos subconjuntos: el de datos menores que
+					la mediana y el de datos mayores que la mediana.
+					La mediana de la mitad inferior, 95, se denomina primer cuartil y se
+					denota por Q1
+					.
+				</p>
+				<img style="display: block; margin: 0 auto;" src="../../img/mediana-2.png" alt="">
+				<p>
+					La mediana de la mitad superior es el llamado tercer cuartil Q3. El segundo cuartil Q2, es la mediana de todos los datos. 
+				</p>
+				<img style="display: block; margin: 0 auto;" src="../../img/mediana-3.png" alt="">
+				<p>
+					Los cuartiles junto con los valores extremos, el máximo M y el mínimo
+					m, pueden usarse para exponer en forma resumida la información
+					que nos brindan los datos. En nuestro ejemplo, el resumen de los 5
+					números es:
+				</p>
+				<img style="display: block; margin: 0 auto;" src="../../img/mediana-4.png" alt="">
+  			</div>
+  			<div class="page" id="segundo">
+  				<h4 class="text-center">Los Deciles y los Percentiles.</h4>
+  				<p>
+  					Los deciles son valores que dividen a una conjunto ordenado de datos
+					en diez partes con igual cantidad de términos.
+					Hay distintos métodos para calcular los deciles y, en general, las
+					medidas de posición.
+					Los valores que resultan al aplicar dos métodos distintos pueden diferir,
+					aunque la diferencia se torna despreciable a medida que aumenta la
+					cantidad de datos. 
+  				</p>
+  				<h5>Lugar que ocupa la mediana</h5>
+  				<p>
+  					Un primer paso para determinar una medida de posición, es encontrar
+					el lugar que ocupa en relación al conjunto de datos. <br>
+					Examinemos el caso de la mediana. Si el número de datos es igual a
+					3, como en la serie 5, 7, 8, la mediana ocupa la posición número.
+				</p>
+  				<img src="../../img/deciles-1.png" style="display: block; margin: 0 auto;">
+  				<p>
+  					Si la cantidad de datos es 5, como en 4, 6, 8, 10, 15, la mediana ocupa
+					la posición número.
+  				</p>
+  				<img src="../../img/deciles-2.png" style="display: block; margin: 0 auto;">
+  				<p>
+  					Cuando hay 7 datos, como en la serie 2, 5, 8, 9, 12, 17, 20, la mediana
+					se localiza en posición número.
+  				</p>
+  				<img src="../../img/deciles-3.png" style="display: block; margin: 0 auto;">
+  				<p>
+  					Si observamos los casos particulares considerados, la posición de la
+					mediana se calcula dividiendo entre dos el número de datos aumentado
+					en uno. Es decir, cuando una serie tiene n datos, la posición de la
+					mediana es:
+  				</p>
+  				<img style="display: block; margin: 0 auto;" src="../../img/deciles-4.png" alt="">
+  			</div>
+  			<div class="page" id="tercero">
+  				<h4 class="text-center">
+  					Localizando deciles
+  				</h4>
+  				<p>
+  					En forma similar se determinan las posiciones de los deciles, solamente
+					que en este caso hay que dividir entre 10. Si hay n datos, la posición
+					del primer decil es:
+  				</p>
+				<img src="../../img/deciles-6.png" alt="">
+				<p>
+					Para hallar la posición del segundo decil, multiplicamos la del primer decil por dos:
+				</p>
+				<img src="../../img/deciles-7.png" alt="">
+				<p>De manera similar, la posición del tercer decil es la del primero multiplicada por 3:</p>
+				<img src="../../img/deciles-8.png" alt="">
+				<p>
+					En general, en un conjunto de n datos ordenados, la posición del
+					k - ésimo decil es:
+				</p>
+				<img src="../../img/deciles-9.png" alt="">
+				<h5>Ejemplo:</h5>
+				<p>
+					Las facturas de 30 abonados del servicio de energía eléctrica de un
+					barrio capitalino registraron cifras contenidas en la segunda columna
+					de la tabla 7. Hallar los deciles primero, quinto y octavo. <br>
+					Lo primero que se debe hacer es ordenar los datos en orden
+					creciente, pero este paso lo podemos saltar ya que los datos están
+					dispuestos de esa manera. La cantidad de datos es n = 30, así que
+					la posición del primer decil es:
+				</p>
+				<img src="../../img/deciles-10.png" alt="">
+				<p>
+					Este resultado se interpreta de esta manera: debe tomarse el dato que
+					ocupa la posición número 3, más una décima, 0,1, de la distancia que
+					hay al siguiente dato. En la serie dada, el dato de la posición número 3
+					es 281; la distancia entre éste y el siguiente dato es:
+				</p>
+				<img src="../../img/deciles-11.png" alt="">
+				<p>Luego, el primer decil es:</p>
+				<img src="../../img/deciles-12.png" alt="">
+				<p>
+					La posición del quinto decil es la del primer decil multiplicada por 5, es decir,
+				</p>
+				<img src="../../img/deciles-13.png" alt="">
+				<p>
+					Por tanto, el quinto decil es el dato que está en la posición número 15,
+					 es decir 336, más cinco décimas, 0.5, de la diferencia 338-336. <br> Así,
+				</p>
+				<img src="../../img/deciles-14.png" alt="">
+				<p>
+					Observemos que este valor coincide con la mediana. Esta coincidencia
+					no es casual, para una serie ordenada cualquiera de n datos, la posición
+					del quinto decil es:
+				</p>
+				<img src="../../img/deciles-15.png" alt="">
+				<p>
+					que, como sabemos, es la posición de la mediana.
+					La posición del octavo decil es la posición del primer decil multiplicada
+					por ocho, es decir,	
+				</p>
+				<img src="../../img/deciles-16.png" alt="">
+				<p>
+					El octavo decil es el dato de la posición 24 más 8 décimas de la distancia
+					de éste al dato de la posición 25, es decir:
+				</p>
+				<img src="../../img/deciles-17.png" alt="">
+  			</div>
+  			<div class="page" id="cuarto">
+  				<h4 class="text-center">Los percentiles</h4>
+  				<p>
+  					Los percentiles son valores que dividen a una colección ordenada de
+					datos, en cien partes con igual cantidad de términos. Las posiciones
+					de los percentiles se calculan en forma análoga a las de los deciles,
+					pero en lugar de dividir entre diez se divide por 100. Así, para una
+					serie de n observaciones el primer percentil ocupa la posición
+  				</p>
+				<img src="../../img/percentiles-1.png" alt="">
+				<p>
+					Luego, la posición del k-ésimo percentil será:
+				</p>
+				<img src="../../img/percentiles-2.png" alt="">
+				<p>A una prueba clasificatoria para optar a una especialidad en medicina,
+				se presentaron 200 candidatos. El criterio para clasificar establece
+				que se admitirán aquellos postulantes cuyos puntajes superen los 74
+				puntos y que además se ubiquen por encima del percentil ochenta.
+				Las primeras 152 calificaciones fueron menores de 75 puntos y las
+				restantes 48 calificaciones fueron las siguientes:
+				</p>
+				<p class="text-center">
+					<strong>75, 75, 76, 77, 78, 79, 79, 79, 80, 80, 81, 81, 81, 81, 83, 83, <br>
+					83, 83, 84, 85, 86, 86, 86, 87, 87, 87, 87, 88, 88, 88, 88, 89, <br>
+					89, 89, 90, 91, 92, 93, 94, 94, 94, 95, 95, 95, 95, 96, 96, 96. <br></strong>
+				</p>
+				<p>
+					Puesto que la serie completa de las calificaciones consta de 200
+					términos, la posición del primer percentil es:
+				</p>
+				<img src="../../img/percentiles-3.png" alt="">
+				<p>Luego, la posición del percentil ochenta será:</p>
+				<img src="../../img/percentiles-4.png" alt="">
+				<p>
+					Por tanto, el percentil ochenta es el dato que ocupa la posición número
+					160 más ocho décimas de la distancia que hay al siguiente dato. Como
+					hay 152 calificaciones que no superaron los 74 puntos, la primera
+					calificación de la lista dada es la número 153, luego la calificación
+					número 160 se encuentra a siete posiciones más adelante, es decir la
+					calificación de 79 puntos que precede a la nota de 80 puntos. Por tanto,
+					el percentil ochenta es:
+				</p>
+				<img src="../../img/percentiles-5.png" alt="">
+				<p>
+					Puesto que los que clasifican para ser admitidos en la especialidad
+					ofertada deben superar este valor, los postulantes que tienen puntajes
+					mayores o iguales a 80 son los que serán admitidos. Por tanto, clasifican
+					los que sacaron las 40 calificaciones más altas.
+				</p>
+  			</div>
+			<div class="bot-nav-bar">
+				<button onClick="slidePage('#primera');" class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab mdl-button--colored">
+					1
+				</button>
+				<button onClick="slidePage('#segundo');" class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab mdl-button--colored">
+					2
+				</button>
+				<button onClick="slidePage('#tercero');" class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab mdl-button--colored">
+					3
+				</button>
+				<button onClick="slidePage('#cuarto');" class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab mdl-button--colored">
+					4
+				</button>
+		    </div>		
+		</div>
+	</main>
+</body>
+</html>
+<style>
+	img{
+		display: block;
+		margin: 0 auto;
+	}
+</style>

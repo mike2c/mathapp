@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Estadística</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!--Jquery load-->
+	<script type="text/javascript" src="../../plugins/jquery.min.js"></script>
+	<script type="text/javascript" src="../../plugins/jquery-ui.min.js"></script>
+	<!--Bootstrap-->
+	<link rel="stylesheet" type="text/css" href="../../bootstrap/css/bootstrap.css">
+	<!--Material Design-->
+	<link rel="stylesheet" href="../../css/material-icons.css">
+	<link rel="stylesheet" href="../../mdl/material.css">
+	<script defer src="../../mdl/material.js"></script>
+	<!--Archivos de la aplicación-->
+	<link rel="stylesheet" type="text/css" href="../../css/app.css">
+	<script type="text/javascript" src="../../js/app.js"></script>
+</head>
+<body>
+	<!-- Always shows a header, even in smaller screens. -->
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+  <header class="mdl-layout__header">
+    <div class="mdl-layout__header-row">
+      <!-- Title -->
+      <span class="mdl-layout-title">Estadística</span>
+      <!-- Add spacer, to align navigation to the right -->
+      <div class="mdl-layout-spacer"></div>
+      <!-- Navigation. We hide it in small screens. -->
+      <nav class="mdl-navigation mdl-layout--large-screen-only">
+        <!-- Colored FAB button with ripple -->
+			<a href="index.html" class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored mdl-button--mini-fab">
+			 <i class="material-icons">arrow_back</i>
+			</a>
+       </nav>
+    </div>
+  </header>
+  <div class="mdl-layout__drawer">
+    <span class="mdl-layout-title">Estadística</span>
+    <nav class="mdl-navigation">
+      <a class="mdl-navigation__link" href="../../">Inicio</a>
+      <a class="mdl-navigation__link" href="../">Unidades</a>
+    </nav>
+  </div>
+  <main class="mdl-layout__content">
+    <div class="page first" id="primero">
+          <h4 class="text-center">Gráfica de pastel</h4>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/TAz8wDk6Ax0" frameborder="0" allowfullscreen></iframe>
+      </div>
+      <div class="page" id="segundo">
+        <h4 class="text-center">Diagrama de barras</h4>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/jg58xIrFh88" frameborder="0" allowfullscreen></iframe>
+      </div> 
+       <div class="page" id="tercero">
+        <h4 class="text-center">Histograma</h4>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/uCP_l5eh7Wo" frameborder="0" allowfullscreen></iframe>
+      </div>
+      <div class="page" id="cuarto">
+        <h4 class="text-center">Poligono de frecuencia</h4>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/Eoja52l-B2o" frameborder="0" allowfullscreen></iframe>
+      </div>
+      <div class="page" id="quinto">
+        <h4 class="text-center">Ojiva</h4>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/El6e8X3hevc" frameborder="0" allowfullscreen></iframe>
+      </div>
+    <div class="bot-nav-bar">
+     <!-- Colored mini FAB button -->
+    <button onClick="slidePage('#primero');" class="mdl-button mdl-js-button mdl-button--fab  mdl-button--colored">
+     1
+    </button>
+    <!-- Colored mini FAB button -->
+    <button onClick="slidePage('#segundo');" class="mdl-button mdl-js-button mdl-button--fab  mdl-button--colored">
+     2
+    </button>
+    <button onClick="slidePage('#tercero');" class="mdl-button mdl-js-button mdl-button--fab  mdl-button--colored">
+     3
+    </button>
+    <!-- Colored mini FAB button -->
+    <button onClick="slidePage('#cuarto');" class="mdl-button mdl-js-button mdl-button--fab  mdl-button--colored">
+     4
+    </button>
+    <button onClick="slidePage('#quinto');" class="mdl-button mdl-js-button mdl-button--fab  mdl-button--colored">
+     5
+    </button>
+    </div>
+  </main>
+</div>
+</body>
+</html>

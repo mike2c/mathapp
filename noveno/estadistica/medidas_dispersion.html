@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Variable estadistica</title>
+	<meta charset="utf-16">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!--Jquery load-->
+	<script type="text/javascript" src="../../plugins/jquery.min.js"></script>
+	<script type="text/javascript" src="../../plugins/jquery-ui.min.js"></script>
+	<!--Bootstrap-->
+	<link rel="stylesheet" type="text/css" href="../../bootstrap/css/bootstrap.css">
+	<!--Material Design-->
+	<link rel="stylesheet" href="../../css/material-icons.css">
+	<link rel="stylesheet" href="../../mdl/material.css">
+	<script defer src="../../mdl/material.js"></script>
+	<!--Archivos de la aplicación-->
+	<link rel="stylesheet" type="text/css" href="../../css/app.css">
+	<script type="text/javascript" src="../../js/app.js"></script>
+</head>
+<body>
+
+	<!-- Always shows a header, even in smaller screens. -->
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+  <header class="mdl-layout__header">
+    <div class="mdl-layout__header-row">
+      <!-- Title -->
+      <span class="mdl-layout-title">Variable estadistica</span>
+      <!-- Add spacer, to align navigation to the right -->
+      <div class="mdl-layout-spacer"></div>
+      <!-- Navigation. We hide it in small screens. -->
+      <nav class="mdl-navigation mdl-layout--large-screen-only">
+        <!-- Colored FAB button with ripple -->
+			<a href="index.html" class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored mdl-button--mini-fab">
+			 <i class="material-icons">arrow_back</i>
+			</a>
+       </nav>
+    </div>
+  </header>
+  <div class="mdl-layout__drawer">
+    <span class="mdl-layout-title">Estadistica</span>
+    <nav class="mdl-navigation">
+      <a class="mdl-navigation__link" href="../../">Inicio</a>
+      <a class="mdl-navigation__link" href="../">Unidades</a>
+      <a class="mdl-navigation__link" href="index.html">Estadistica</a>
+    </nav>
+  </div>
+  <main class="mdl-layout__content">
+    <div class="page-content"><!-- Your content goes here -->
+		<div class="page first" id="primera">
+			<h4>
+				Medidas de dispersión
+			</h4>
+			<p>
+				Las medidas de ubicación o posición, como la media o la mediana,
+				en muchas situaciones no solamente resultan insuficientes, sino que
+				pueden incluso conducir a errores de interpretación. Al respecto, nos
+				dice George Bernard Shaw:
+				<br> <br>
+				<span class="text-primary text-center">
+					“La estadística es una ciencia que demuestra que si mi vecino tiene
+				dos carros y yo ninguno, los dos tenemos uno”
+				</span> <br> <br>
+				Las medidas de ubicación como la media y la mediana sirven para
+				describir el centro de los datos, pero no permiten describir la extensión
+				de éstos ni su variabilidad. Por eso se requieren otras medidas
+				denominadas medidas de dispersión. <br><br>
+				Las medidas de dispersión nos resumen la información de la “muestra”
+				o serie de datos, dándonos así información acerca de la magnitud del
+				alejamiento de la distribución de datos en relación a un valor central o
+				de concentración de los datos. <br><br>
+				La estadística nos permite tener una visión del comportamiento de
+				una serie de sucesos o eventos a los que denominamos "variables",
+				así tenemos varias herramientas estadísticas como lo son la media
+				aritmética, la mediana y la moda. <br><br>
+				Pero estas medidas no son suficientes para describir un conjunto
+				de datos, necesitamos conocer la variabilidad de los datos, es decir,
+				como se dispersan los datos reales en comparación a las medidas de
+				tendencia central, para esto contamos con esta nueva herramienta. <br><br>
+				Las medidas de dispersión, son indicadores de variabilidad y cuya
+				importancia reside en la necesidad de tomar decisiones, basadas en
+				estadísticas básicas. <br>
+				Los principales estadísticos de medidas de dispersión son:
+				<ol>
+					<li> Amplitud o rango</li>
+					<li> Desviación media</li>
+					<li> Varianza</li>
+					<li> Desviación estándar o desviación típica</li>
+					<li> Coeficiente de variación</li>
+				</ol>
+			</p>
+		</div>
+		<div class="page" id="segundo">
+			<h4>La amplitud</h4>
+			<p>
+				La amplitud en una colección de datos es la distancia entre los extremos,
+				es decir, la diferencia entre el dato máximo y el mínimo.
+				En el conjunto 3, 5, 6, 7, 21, 43, 54, 24, 28, los valores máximo y mínimo
+				son 54 y 3, respectivamente. Por tanto,
+			</p>
+			<img src="../../img/amplitud-1.png" alt="">
+			<p>
+				Supongamos que unos excursionistas deben decidir si atraviesan
+				o no un río a pie. Se les informa que, según una muestra tomada
+				recientemente, la profundidad media del río es igual a 0,35 m. ¿Es
+				suficiente este dato para tomar una decisión acertada? ¿Cuál sería su
+				decisión en cada uno de los siguientes casos?
+			</p>
+			<ol>
+				<li>La amplitud en la muestra es igual a 0.52 m.</li>
+				<li>La amplitud en la muestra es igual a 1.65 m.</li>
+			</ol>
+			<p>
+				El conocimiento de la profundidad media del río no es suficiente para
+				dar garantías de seguridad al cruzar el río a pie; podría suceder que en
+				el tramo en que se pretende atravesar el río, el valor de la profundidad
+				varíe considerablemente respecto a la media.
+			</p>
+			<div class="separator"></div>
+			<p>	
+			
+				<strong>Caso 1.</strong> Supongamos que la amplitud de las profundidades del río es
+				igual a 0.52 m. Esto significa que la distancia entre las profundidades
+				extremas, la máxima M y la mínima m, es igual a 0.52, medida en
+				metros.
+				<br>
+				Esto es, 
+			</p>
+			<img src="../../img/amplitud-2.png" alt="">
+			<p>
+				Puesto que la profundidad mínima m es menor que la profundidad media de 0.35, la suma
+			</p>
+			<p class="text-center"> 0.52 + profundidad mínima = 0.52 + m = M</p>
+			<p>Es menor que </p>
+			<p class="text-center">0.52 + profundidad media = 0.52 + 0.35.</p>
+			<p>Por lo tanto,</p>
+			<p>M es menor que 0.87.</p>
+			<p>En conclusión, el río tiene una profundidad máxima de menos de 0,87
+			metros y, si los excursionistas son personas adultas de talla normal,
+			pueden cruzar el río sin preocuparse por la profundidad de éste.
+			</p>
+			<div class="separator"></div>
+			<p>
+				<strong>Caso 2.</strong> Consideremos ahora el problema en que la amplitud de las
+				profundidades del río es de 1,65 metros. Como en el caso anterior, la
+				profundidad máxima es igual a la suma de la amplitud y la profundidad
+				mínima
+			</p>
+			<p class="text-center">	M = amplitud + m = 1.65 + m</p>
+			<p>
+				la cual tiene un valor menor que la suma de la amplitud y la profundidad 
+				media,
+			</p>
+			<p class="text-center">
+				amplitud + media = 1.65 + 0.35 = 2.00
+			</p>
+			<p>
+				Por tanto, la profundidad máxima M tiene un valor menor que 2,00. Por
+				otra parte, M es mayor que la media de 0,35 metros.
+			</p>
+			<p>
+				Vemos que en este caso la profundidad máxima se encuentra entre
+				0,35 y 2 metros de profundidad. Este intervalo es muy grande para las
+				circunstancias del problema planteado, de modo que habría mucha
+				incertidumbre en la toma de una decisión.
+			</p>
+			<p>
+				Como hemos comprobado la amplitud puede brindar información
+				valiosa a la hora de decidir un asunto. Sin embargo, en muchos casos
+				su utilidad resulta muy limitada.
+			</p>
+			<p>
+				Otras medidas de dispersión son la desviación media, la varianza, la
+				desviación típica o estándar y el coeficiente de variación.
+			</p>
+		</div>
+		<div class="page" id="tercero">
+			<h4>La desviación media</h4>
+			<p>
+				Anteriormente definimos la amplitud como la distancia entre el dato más
+				alto y el más bajo. Similarmente, la desviación media puede tratarse
+				como una distancia, pero con la ventaja de que, a diferencia de la
+				amplitud, que sólo toma en cuenta dos datos, ésta medida considera
+				toda la información.
+			</p>
+			<p>
+				La desviación de un dato x respecto a la media <img class="inline-img" src="../../img/x-con-enfasis.png" alt="">, es la diferencia
+				x - <img class="inline-img" src="../../img/x-con-enfasis.png" alt=""> entre él y la media. Esta puede ser negativa si el dato es menor
+				que la media, o positiva, cuando el dato es mayor que la media o igual
+				a cero cuando el dato es igual a la media.
+			</p>
+			<p>
+				Parecería natural definir la desviación media de un conjunto de
+				datos como el promedio de las desviaciones, sin embargo, esto no
+				proporcionaría ninguna información útil ya que, cómo se muestra en el
+				siguiente ejemplo, la suma de las desviaciones es igual a cero.
+				
+			</p>
+			<p>
+				Una forma de solventar el problema de la nulidad de la suma de las
+				desviaciones es considerar, no las propias desviaciones, sino sus
+				valores absolutos, es decir las distancias entre la media y cada uno de
+				los datos. Esto da lugar a la siguiente definición.
+			</p>
+			<img src="../../img/desviacion-media-1.png" alt="">
+			<p>
+				Entre menor es la desviación media, más agrupados están los datos
+				alrededor de la media y ésta los representa con mayor fidelidad. Por el
+				contrario, entre mayor es la desviación media, más alejados están los
+				datos de la media y por tanto hay mayor dispersión.
+			</p>
+			<p>
+				En una pequeña empresa los salarios devengados por siete empleados,
+				expresados en miles de córdobas son los siguientes: 2,8; 2,9; 2,9; 2,9;
+				3,5. Calcular la desviación media.
+			</p>
+			<p>
+				De acuerdo con la definición, para calcular la desviación media se
+				requiere determinar primero la media aritmética. Para los datos dados
+				ésta es:
+			</p>
+			<img src="../../img/desviacion-media-2.png" alt="">
+			<p>Salarios:</p>
+			<img src="../../img/desviacion-media-3.png" alt="">
+			<p>
+				Las distancias entre los datos y la media aparecen registradas en
+				la cuarta columna de la tabla de la página anterior. Su promedio, es
+				decir su suma dividida entre la cantidad de datos, nos proporciona la
+				desviación media:
+			</p>
+			<img src="../../img/desviacion-media-4.png" alt="">
+			<p>
+				Observe que la suma de las desviaciones es igual a cero como se dijo
+				anteriormente.
+			</p>
+		</div>
+		<div class="page" id="cuarto">
+			<h4>La varianza</h4>
+			<p>
+				Si en la fórmula del cálculo de la desviación media cambiamos las
+				desviaciones por sus cuadrados, obtenemos el indicador estadístico
+				denominado varianza. Es decir,
+			</p>
+			<img style="max-width: 150px;" src="../../img/varianza-1.png" alt="">
+			<p>Observe indicación en la columna izquierda.</p>
+			<img src="../../img/varianza-2.png" alt="">
+		</div>
+		<div class="page" id="quinto">
+			<h4>La desviación típica o estándar</h4>
+			<p>
+				Si extraemos la raíz cuadrada a la varianza obtenemos la desviación
+				típica o estándar, que es la medida de dispersión más utilizada. 
+			</p>
+			<img src="../../img/desviacion-tipica-1.png" alt="">
+			<p>
+				Para los salarios de la empresa del ejemplo 7, la desviación estándar
+				es igual a:
+			</p>
+			<img src="../../img/desviacion-tipica-2.png" alt="">
+			<p>
+				En el lenguaje corriente decimos que dos objetos están cercanos si
+				se encuentran a poca distancia. Lo mismo decimos de una serie de
+				datos y su media, si la desviación estándar es pequeña significa que
+				los datos están agrupados alrededor de la media. Por el contrario, si
+				la desviación estándar es muy grande entonces los datos están muy
+				dispersos.
+			</p>
+		</div>
+		<div class="page" id="sexto">
+			<h4>El coeficiente de variación</h4>
+			<p>El coeficiente de variación, CV, es el cociente entre la desviación
+			estándar y la media:</p>
+			<img src="../../img/coeficiente-1.png" alt="">
+			<p>
+				El coeficiente de variación, es una medida de la dispersión relativa de
+				una serie de datos. Cuando CV, está cerca de cero, la media representa
+				adecuadamente a la distribución de los datos, pero cuando su valor
+				excede a 0.75, la media pierde representatividad.
+			</p>
+			<p>Para el ejemplo abordado anteriormente, el coeficiente de variación es
+			igual a:</p>
+			<img src="../../img/coeficiente-2.png" alt="">
+			<p>
+				lo cual significa que la media representa significativamente a los
+				salarios de los cinco trabajadores.
+			</p>
+		</div>
+		<div class="bot-nav-bar">
+			<!-- Colored mini FAB button -->
+			<button onClick="slidePage('#primera');" class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab mdl-button--colored">
+			  1
+			</button>
+			<!-- Colored mini FAB button -->
+			<button onClick="slidePage('#segundo');" class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab mdl-button--colored">
+			  2
+			</button>
+			<!-- Colored mini FAB button -->
+			<button onClick="slidePage('#tercero');" class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab mdl-button--colored">
+			  3
+			</button>
+			<button onClick="slidePage('#cuarto');" class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab mdl-button--colored">
+			  4
+			</button>
+			<button onClick="slidePage('#quinto');" class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab mdl-button--colored">
+			  5
+			</button>
+			<button onClick="slidePage('#sexto');" class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab mdl-button--colored">
+			  6
+			</button>
+		</div>
+	</div>
+	</main>
+</body>
+</html>
+<style>
+	img{
+		display: block;
+		margin: 0 auto;
+	}
+	.text-center{
+		font-weight: bold;
+		color: black;
+	}
+</style>

@@ -70,21 +70,21 @@
 						</div>
 						<div class="gallery-item">
 							<img src="../../img/histograma.png" alt="">
-							<a href="">
+							<a href="javascript:slidePage('#histograma');">
 								Histograma
 							</a>
 						</div>
 						<div class="gallery-item">
 							<img src="../../img/poligono-frecuencia.gif" alt="">
-							<a href="">
+							<a href="javascript:slidePage('#poligono_frecuencia');">
 								Poligono de frecuencia
 							</a>
 						</div>
 						
 						<div class="gallery-item">
 							<img src="../../img/diagrama-lineas.gif" alt="">
-							<a href="">
-								Diagrama de lineas
+							<a href="javascript:slidePage('#ojiva');">
+								Ojiva
 							</a>
 						</div>
 					</div>
@@ -192,8 +192,278 @@
 						<br>								
 				</div>
 				<div class="page" id="histograma">
-
+					<h4 class="text-center">Histograma</h4>
+					<p>
+						Un histograma es una representación gráfica de una variable en forma de barras. <br>
+						Se utilizan para variables continuas o para variables discretas, con un gran número de datos, y que se han agrupado en clases.
+						<br>
+						En el eje abscisas se construyen unos rectángulos que tienen por base la amplitud del intervalo, y por altura, la frecuencia absoluta de cada intervalo.La superficie de cada barra es proporcional a la frecuencia de los valores representados.
+					</p>
+					<h5 class="text-center">
+						Ejemplo
+					</h5>
+					
+					<div class="row">
+						<div class="col-md-offset-1 col-lg-offset-1 col-md-4 col-lg-4">
+						<p>El peso de 65 personas adultas viene dado por la siguiente tabla:</p>
+							<table class="table table-bordered">
+                              <tbody><tr>
+                                <td>&nbsp;</td>
+                                <th>c<sub>i</sub></th>
+                                <th>f<sub>i</sub></th>
+                                <th>F<sub>i</sub></th>
+                              </tr>
+                              <tr>
+                                <th>[50, 60)</th>
+                                <td>55</td>
+                                <td>8</td>
+                                <td>8</td>
+                              </tr>
+                              <tr>
+                                <th>[60, 70)</th>
+                                <td>65</td>
+                                <td>10</td>
+                                <td>18</td>
+                              </tr>
+                              <tr>
+                                <th>[70, 80)</th>
+                                <td>75</td>
+                                <td>16</td>
+                                <td>34</td>
+                              </tr>
+                              <tr>
+                                <th>[80, 90)</th>
+                                <td>85</td>
+                                <td>14</td>
+                                <td>48</td>
+                              </tr>
+                              <tr>
+                                <th>[90, 100)</th>
+                                <td>95</td>
+                                <td>10</td>
+                                <td>58</td>
+                              </tr>
+                              <tr>
+                                <th>[100, 110)</th>
+                                <td>110</td>
+                                <td>5</td>
+                                <td>63</td>
+                              </tr>
+                              <tr>
+                                <th>[110, 120)</th>
+                                <td>115</td>
+                                <td>2</td>
+                                <td>65</td>
+                              </tr>
+                              <tr>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td style="color:#900;">65</td>
+                                <td>&nbsp;</td>
+                              </tr>
+                            </tbody>
+						</table>
+						</div>	
+						<div class="col-md-4 col-lg-4 col-lg-offset-1 col-md-offset-1">
+							<p>Nuestro histograma quedaría de la siguiente forma:</p>
+							<img src="../../img/ejemplo-histograma-f.png" alt="">
+						</div>
+					</div>
 				</div>
+				<div class="page" id="poligono_frecuencia">
+					<h4 class="text-center">Polígono de frecuencia</h4>
+					<p>Un polígono de frecuencias se forma uniendo los extremos de las barras de un diagrama de barras mediante segmentos.</p>
+					<p>También se puede realizar trazando los puntos que representan las frecuencias y uniéndolos mediante segmentos.</p>
+
+					<h5>Ejemplo</h5>
+					<p>Las temperaturas en un día de otoño de una ciudad han sufrido las siguientes variaciones:</p>
+					<br>
+					<div class="row">
+						<div class="col-md-4 col-lg-4 col-md-offset-1 col-lg-offset-1">
+							<table class="table table-bordered">
+							    <tbody><tr>
+							      <th style="width: 50%;">Hora</th>
+							        <th style="width: 50%;">Temperatura</th>
+							      </tr>
+								    <tr>
+								      <td style="width: 50%;">6</td>
+								        <td style="width: 50%;">7º</td>
+								      </tr>
+								    <tr>
+								      <td style="width: 50%;">9</td>
+								        <td style="width: 50%;">12°</td>
+								      </tr>
+								    <tr>
+								      <td style="width: 50%;">12</td>
+								        <td style="width: 50%;">14°</td>
+								      </tr>
+								    <tr>
+								      <td style="width: 50%;">15</td>
+								        <td style="width: 50%;">11°</td>
+								      </tr>
+								    <tr>
+								      <td style="width: 50%;">18</td>
+								        <td style="width: 50%;">12°</td>
+								      </tr>
+								    <tr>
+								      <td style="width: 50%;">21</td>
+								        <td style="width: 50%;">10°</td>
+								      </tr>
+								    <tr>
+								      <td style="width: 50%;">24</td>
+							        <td style="width: 50%;">8°</td>
+							      </tr>
+							  	</tbody>
+							</table>
+						</div>
+						<div class="col-md-4 col-lg-4">
+							<img src="../../img/ejemplo-poligono-frecuencia-.png" alt="">
+						</div>
+					</div>
+					<h4>Poligono de frecuencia con datos agrupados</h4>
+						<p>
+							Para construir el polígono de frecuencia se toma la marca de clase que coincide con el punto medio de cada rectángulo de un histograma.
+						</p>
+						<h5>Ejemplo</h5>
+						<p>El peso de 65 personas adultas viene dado por la siguiente tabla:</p>
+						<div class="row">
+							<div class="col-md-4 col-lg-4 col-md-offset-1">
+								<table class="table table-bordered">
+	                              <tbody><tr>
+	                                <td style="width: 25%;">&nbsp;</td>
+	                                <th style="width: 25%;">c<sub>i</sub></th>
+	                                <th style="width: 25%;">f<sub>i</sub></th>
+	                                <th style="width: 25%;">F<sub>i</sub></th>
+	                              </tr>
+	                              <tr>
+	                                <th style="width: 25%;">[50, 60)</th>
+	                                <td style="width: 25%;">55</td>
+	                                <td style="width: 25%;">8</td>
+	                                <td style="width: 25%;">8</td>
+	                              </tr>
+	                              <tr>
+	                                <th style="width: 25%;">[60, 70)</th>
+	                                <td style="width: 25%;">65</td>
+	                                <td style="width: 25%;">10</td>
+	                                <td style="width: 25%;">18</td>
+	                              </tr>
+	                              <tr>
+	                                <th style="width: 25%;">[70, 80)</th>
+	                                <td style="width: 25%;">75</td>
+	                                <td style="width: 25%;">16</td>
+	                                <td style="width: 25%;">34</td>
+	                              </tr>
+	                              <tr>
+	                                <th style="width: 25%;">[80, 90)</th>
+	                                <td style="width: 25%;">85</td>
+	                                <td style="width: 25%;">14</td>
+	                                <td style="width: 25%;">48</td>
+	                              </tr>
+	                              <tr>
+	                                <th style="width: 25%;">[90, 100)</th>
+	                                <td style="width: 25%;">95</td>
+	                                <td style="width: 25%;">10</td>
+	                                <td style="width: 25%;">58</td>
+	                              </tr>
+	                              <tr>
+	                                <th style="width: 25%;">[100, 110)</th>
+	                                <td style="width: 25%;">110</td>
+	                                <td style="width: 25%;">5</td>
+	                                <td style="width: 25%;">63</td>
+	                              </tr>
+	                              <tr>
+	                                <th style="width: 25%;">[110, 120)</th>
+	                                <td style="width: 25%;">115</td>
+	                                <td style="width: 25%;">2</td>
+	                                <td style="width: 25%;">65</td>
+	                              </tr>
+	                              <tr>
+	                                <td style="width: 25%;">&nbsp;</td>
+	                                <td style="width: 25%;">&nbsp;</td>
+	                                <td style="color: rgb(153, 0, 0); width: 25%;">65</td>
+	                                <td style="width: 25%;">&nbsp;</td>
+	                              </tr>
+	                            </tbody>
+	                        </table>
+							</div>
+							<div class="col-md-4 col-lg-4">
+								 <img src="../../img/ejemplo-poligono-frecuencia-datos-agrupados.png">
+							</div>
+						</div>                      
+                    </div>
+                    <div id="ojiva" class="page">
+                    	<h4 class="text-center">
+                    		Ojiva
+                    	</h4>
+                    	<p>
+                    	La ojiva es el polígono de frecuencias acumuladas, es decir,en ellas se permite ver cuántas observaciones se encuentran por debajo de ciertos valores en lugar de mostrar los números asignados a cada intervalo. Podemos representar la distribución de frecuencias relativas acumuladas mediante un gráfico de línea llamado Ojiva. Esta se construye de la siguiente manera:
+                    	</p>
+
+                    	<ol>
+                    		<li>En el eje horizontal en lugar de las clases se colocan los límites superiores.</li>
+                    		<li>En el eje vertical se escriben las frecuencias.</li>
+                    	</ol>
+                    	
+                    	<br><br>
+                    	<div class="row">
+                    		<div class="col-md-4 col-lg-4">
+                    			<p>
+                    				Tabla de frecuencia de calificaciones
+                    			</p>
+                    			<table class="table table-bordered">
+                    				<tr>
+                    					<th>Clase</th>
+                    					<th>f</th>
+                    					<th>fa</th>
+                    					<th>fr</th>
+                    					<th>fra</th>
+                    				</tr>
+                    				<tr>
+                    					<td>50  - 59</td>
+                    					<td>12</td>
+                    					<td>12</td>
+                    					<td>0.24</td>
+                    					<td>0.24</td>
+                    				</tr>
+                    				<tr>
+                    					<td>60 - 69</td>
+                    					<td>15</td>
+                    					<td>27</td>
+                    					<td>0.30</td>
+                    					<td>0.54</td>
+                    				</tr>
+                    				<tr>
+                    					<td>70 - 79</td>
+                    					<td>13</td>
+                    					<td>40</td>
+                    					<td>0.26</td>
+                    					<td>0.8</td>
+                    				</tr>
+                    				<tr>
+                    					<td>80 - 89</td>
+                    					<td>6</td>
+                    					<td>46</td>
+                    					<td>0.12</td>
+                    					<td>0.92</td>
+                    				</tr>
+                    				<tr>
+                    					<td>90 - 99</td>
+                    					<td>4</td>
+                    					<td>50</td>
+                    					<td>0.08</td>
+                    					<td>1</td>
+                    				</tr>
+                    			</table>
+                    		</div>
+                    		<br>
+                    		<div class="col-md-12 col-lg-12">
+                    			<p>
+                    		La ojiva comienza con el límite superior de la primera clase.  <br>
+                    	</p>
+                    			<img src="../../img/ejemplo-ojiva.png" alt="">
+                    		</div>
+                    	</div>
+                    </div>
 			<div class="bot-nav-bar">
 			     	<!-- Colored mini FAB button -->
 				    <button onClick="slidePage('#tipos_graficos');" class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab mdl-button--colored">
@@ -212,7 +482,7 @@
 				    <button onClick="slidePage('#poligono_frecuencia');" class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab mdl-button--colored">
 				     4
 				    </button>
-				    <button onClick="slidePage('#diagrama_lineas');" class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab mdl-button--colored">
+				    <button onClick="slidePage('#ojiva');" class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab mdl-button--colored">
 				     5
 				    </button>
 

@@ -3,9 +3,12 @@ body{
 	display: none;
 }
 
+.text-white{
+	color: white;
+}
 body  h1,h2,h3,h4,h5{
 	color: white;
-	font-weight: bold;
+	//font-weight: bold;
 	//text-shadow: 1px 1px 1px ;
 	margin: 5px 0px;
 }
@@ -25,8 +28,12 @@ body  h1,h2,h3,h4,h5{
 	margin-bottom: 0px;
 }
 .page h4{
+	padding: 0px 40px;
 	color: #263a84;
+	padding-left: 60px;
+	margin-bottom: 30px;
 }
+
 .first{
 	display: block;
 }
@@ -46,7 +53,7 @@ body  h1,h2,h3,h4,h5{
 	color: #4173A3;
 }
 .content p{
-	padding: 5px 20px;
+	padding: 5px 5%;
 	margin: 0px;
 	color: #4e5056;
 	font-size: 19px;
@@ -54,20 +61,23 @@ body  h1,h2,h3,h4,h5{
 }
 
 .page p{
-	padding: 5px 20px;
+	padding: 5px 5%;
 	margin: 0px;
 	color: #4e5056;
 	font-size: 19px;
 	font-family: Calibri;
 }
-.content ol, ul{
+.page ol, ul{
 	color: #4e5056;
 	font-family: calibri;
 	font-size: 19px;
+	padding-left: 7%;
 }
 .separator{
-	border-bottom: 4px solid white;
-	margin: 30px 0px;
+	border-top: 2px solid #2d70b8;
+	border-bottom: 2px solid lightgray;
+	margin: 20px 60px;
+	border-radius: 50%;
 }
 
 .mdl-button:hover{
@@ -120,4 +130,8 @@ body  h1,h2,h3,h4,h5{
     font-size: 16px;
     font-weight: bold;
     margin: 10px 5px;
+  }
+
+  .inline-img{
+  	display: inline-block;
   }
