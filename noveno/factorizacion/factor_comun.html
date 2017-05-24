@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Estadística</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!--Jquery load-->
+	<script type="text/javascript" src="../../plugins/jquery.min.js"></script>
+	<script type="text/javascript" src="../../plugins/jquery-ui.min.js"></script>
+	<!--Bootstrap-->
+	<link rel="stylesheet" type="text/css" href="../../bootstrap/css/bootstrap.css">
+	<!--Material Design-->
+	<link rel="stylesheet" href="../../css/material-icons.css">
+	<link rel="stylesheet" href="../../mdl/material.css">
+	<script defer src="../../mdl/material.js"></script>
+	<!--Archivos de la aplicación-->
+	<link rel="stylesheet" type="text/css" href="../../css/app.css">
+	<script type="text/javascript" src="../../js/app.js"></script>
+</head>
+<body>
+
+	<!-- Always shows a header, even in smaller screens. -->
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+  <header class="mdl-layout__header">
+    <div class="mdl-layout__header-row">
+      <!-- Title -->
+      <span class="mdl-layout-title">Factor común</span>
+      <!-- Add spacer, to align navigation to the right -->
+      <div class="mdl-layout-spacer"></div>
+      <!-- Navigation. We hide it in small screens. -->
+      <nav class="mdl-navigation mdl-layout--large-screen-only">
+         <!-- Colored FAB button with ripple -->
+			<a href="index.html" class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored mdl-button--mini-fab">
+			 <i class="material-icons">arrow_back</i>
+			</a>
+       </nav>
+    </div>
+  </header>
+  <div class="mdl-layout__drawer">
+    <span class="mdl-layout-title">Factorización</span>
+    <nav class="mdl-navigation">
+      <a class="mdl-navigation__link" href="../../">Inicio</a>
+      <a class="mdl-navigation__link" href="../">Unidades</a>
+      <a class="mdl-navigation__link" href="index.html">Estadistica</a>
+    </nav>
+  </div>
+  <main class="mdl-layout__content">
+  		<div class="page-content"><!-- Your content goes here -->
+			<div class="page first" id="primera">
+				<h4>Factorización</h4>			
+
+				<p>En distintas áreas de la matemática, la factorización juega un rol de
+				enorme importancia en el tratamiento de los objetos de estudio.
+				</p>
+
+				<p>
+					En matemática, específicamente en Álgebra, factorizar un objeto
+					significa descomponerlo como un producto de otros objetos de la
+					misma naturaleza. En particular, factorizar un polinomio consiste en
+					expresarlo como un producto de otros polinomios; cada polinomio en
+					el producto es un factor del polinomio original.
+				</p>
+				<p>
+					Esta unidad está dedicada a la factorización de polinomios. Los
+					conocimientos, habilidades y experiencias adquiridas en los cursos
+					precedentes serán de gran utilidad, en particular, el estudio de los
+					polinomios, y en especial, los denominados productos notables o
+					productos especiales.
+				</p>
+			</div>
+			<div class="page" id="segunda">
+				<h4>Factor común</h4>
+				<p>De acuerdo con la propiedad distributiva</p>
+				<p class="formula">3r (a + s) = 3ra + 3rs</p>
+				<p>y de aquí, por simetría, se obtiene la igualdad equivalente</p>
+				<p class="formula">3ra + 3rs = 3r (a + s).</p>
+				<p>Igual que en el ejemplo arriba expuesto, en cada caso usted obtendrá
+				una igualdad, cuya parte izquierda es la expresión dada y la parte
+				derecha es el desarrollo encontrado. si una
+				expresión es factor común de todos los términos de un polinomio,
+				entonces dicha expresión aparecerá como un primer factor en la
+				factorización del polinomio. El segundo factor es el cociente entre el
+				polinomio y la expresión.</p>
+
+				<h5 class="ejemplo">Ejemplo 1v</h5>
+			</div>
+			<div class="page" id="tercera">
+				
+			</div>
+			<div class="bot-nav-bar">
+				<!-- Colored mini FAB button -->
+				<button onClick= "slidePage('#primera');" class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab mdl-button--colored">
+				<i class="material-icons">home</i>
+				</button>
+				<!-- Colored mini FAB button -->
+				<button onClick= "slidePage('#segunda');" class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab mdl-button--colored">
+				  1
+				</button>
+				<button onClick= "slidePage('#segunda');" class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab mdl-button--colored">
+				  2
+				</button>
+			</div>
+		</div>
+	</main>
+</body>
+</html>
+<style>
+	img{
+		border: 0px solid lightgray;
+		border-radius: 20px;
+		display: block;
+		margin: 20px auto;
+		
+		width: 35%;
+		cursor: pointer;
+	}
+	
+	table{
+		width: 70%;
+		margin: 30 auto;
+	}
+</style>
+<script>
+	$("img").click(function(){
+		$(this).animate(
+			{
+				width: "50%"
+			}, "fast");
+	});
+
+	$("img").mouseleave(function(){
+		$(this).animate({
+			width: "35%"
+		}, 300);
+	});
+</script>

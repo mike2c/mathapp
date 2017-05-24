@@ -32,6 +32,7 @@ body  h1,h2,h3,h4,h5{
 	color: #263a84;
 	padding-left: 60px;
 	margin-bottom: 30px;
+	font-weight: bold;
 }
 
 .first{
@@ -135,3 +136,8 @@ body  h1,h2,h3,h4,h5{
   .inline-img{
   	display: inline-block;
   }
+
+.ejemplo{
+	display: block;
+	background-color: #222;
+}
