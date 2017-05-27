@@ -141,3 +141,12 @@ body  h1,h2,h3,h4,h5{
 	display: block;
 	background-color: #222;
 }
+.mdl-layout__header{
+	background-color: #337ab7;
+}
+.mdl-layout__tab-bar{
+	background-color: #337ab7;	
+}
+.mdl-navigation.mdl-navigation__link: hover{
+	background-color: blue;
+}
